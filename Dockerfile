@@ -4,7 +4,7 @@
 FROM abiosoft/caddy:builder as builder
 
 ARG version="1.0.0"
-ARG plugins="git,filebrowser,cors,realip,expires,cache,webdav,dnspod"
+ARG plugins="git,filebrowser,cors,realip,expires,cache,webdav,dnspod,namecheap"
 ARG enable_telemetry="true"
 
 # process wrapper

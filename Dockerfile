@@ -27,6 +27,9 @@ ENV ACME_AGREE="true"
 # Telemetry Stats
 ENV ENABLE_TELEMETRY="$enable_telemetry"
 
+# Telemetry Stats
+ENV ENABLE_TELEMETRY="$enable_telemetry"
+
 RUN apk add --no-cache openssh-client git
 
 # install caddy

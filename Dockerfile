@@ -32,6 +32,7 @@ ENV ACME_AGREE="false"
 ENV ENABLE_TELEMETRY="$enable_telemetry"
 
 RUN apk add --no-cache \
+<<<<<<< HEAD
   ca-certificates \
   curl \
   git \
@@ -76,6 +77,13 @@ RUN ln -sf /usr/bin/php7 /usr/bin/php
 
 # Symlink php-fpm7 to php-fpm
 RUN ln -sf /usr/bin/php-fpm7 /usr/bin/php-fpm
+=======
+    ca-certificates \
+    git \
+    mailcap \
+    openssh-client \
+    tzdata
+>>>>>>> upstream/master
 
 # Add a PHP www-user instead of nobody
 RUN addgroup -g ${PGID} www-user && \
